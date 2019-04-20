@@ -1,5 +1,0 @@
-example-01:主要是Ioc容器的实现
-    BeanFactory和ApplicationContext都可以看成是容器的具体表现形式。
-    作为Ioc容器，需要为它的具体实现指定基本的功能规范，这个功能规范的设计表现为接口类BeanFactory,
-它体现了Spring为提供给用户使用的Ioc容器所设定的最基本的功能规范。
-    那对Spring的具体Ioc容器实现来说，他需要满足BeanFactory这个基本的接口定义。
