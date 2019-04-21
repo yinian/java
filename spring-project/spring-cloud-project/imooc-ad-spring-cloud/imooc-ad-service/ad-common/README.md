@@ -11,7 +11,8 @@
 ## 技术讲解
  - 使用了`ResponseBodyAdvice` 接口实现自定义数据类型(Spring Boot)，具体见`CommonResponseDataAdvice`类，
  - 使用了`@ExceptionHandler` (Spring的异常处理)，具体见`GlobalExceptionAdvice`类，
- - 使用了`WebMvcConfigurer` (Spring的)实现消息转换，具体见`WebConfiguration`类，
+ - 使用了`WebMvcConfigurer` (Spring的)实现消息转换，具体见`WebConfiguration`类
+ 
  | 类名 | 作用 | 默认值 |
 | ------ | ------ | ------ |
 | `CommonResponseDataAdvice` | 主要是完成了统一响应的处理 |  |
