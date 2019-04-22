@@ -3,15 +3,12 @@ package com.viagra.java.concurrent.future.demo2;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
 /**
  * @Author: HASEE
- * @Description:
+ * @Description: demo2包下已经传到github
  * @Date: Created in 15:51 2019/4/20
  * @Modified By:
  */
