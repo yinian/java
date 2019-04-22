@@ -11,3 +11,4 @@
 - MySQL8.0
 - kafka 2.1.0
 - Spring Cloud Finchley
+- Spring 5.0
