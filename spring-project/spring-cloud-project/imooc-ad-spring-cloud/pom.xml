@@ -12,6 +12,7 @@
         <module>ad-eureka</module>
         <module>ad-gateway</module>
         <module>imooc-ad-service</module>
+        <module>imooc-springboot</module>
     </modules>
 
     <name>imooc-ad-spring-cloud</name>
