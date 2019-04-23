@@ -5,4 +5,6 @@
  - `@EnableFeignClients` 其他微服务可以调用该服务，或者可以被监控
  - `@EnableCircuitBreaker` 为了实现监控
  - `@EnableEurekaClient` 表示Eureka client端，用来拿到其他微服务的信息
+ - dao包下使用了`Spring-data-jpa` 实现数据持久化
+建表语句在 resources文件夹下。 
 
