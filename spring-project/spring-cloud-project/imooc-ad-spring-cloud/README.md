@@ -13,5 +13,7 @@
 - Spring Cloud Finchley
 - Spring 5.0
 
+建表语句在(imooc-ad-spring-cloud\imooc-ad-service\ad-sponsor\src\main\resources\ad-sponsor.sql) 目录下
+
 ## 详情
 [详情](https://blog.csdn.net/m0_37941483/article/details/89420433)
