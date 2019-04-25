@@ -14,6 +14,7 @@
 - Spring 5.0
 
 建表语句在(imooc-ad-spring-cloud\imooc-ad-service\ad-sponsor\src\main\resources\ad-sponsor.sql) 目录下
+<<<<<<< HEAD
 初始化语句在(imooc-ad-spring-cloud\imooc-ad-service\ad-sponsor\src\main\resources\imooc-ad-init-data.sql)下
 ## 具体操作
 1.通过执行ad-sponsor下的DumpDataService类的`dumpAdTableData`方法的测试用例，将数据表数据导出到文件中，用于将来
@@ -36,6 +37,8 @@
     
     
 
+=======
+>>>>>>> e51e3f4fe8253160f6942363c23c0c045e9253f2
 
 ## 详情
 [详情](https://blog.csdn.net/m0_37941483/article/details/89420433)
