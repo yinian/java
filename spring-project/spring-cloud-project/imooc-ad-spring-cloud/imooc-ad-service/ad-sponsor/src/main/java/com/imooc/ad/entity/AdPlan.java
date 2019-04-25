@@ -72,3 +72,4 @@ public class AdPlan {
         this.updateTime = this.createTime;
     }
 }
+
