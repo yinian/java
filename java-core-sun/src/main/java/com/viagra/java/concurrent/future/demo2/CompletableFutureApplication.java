@@ -62,8 +62,8 @@ public class CompletableFutureApplication {
 	// Third - CompletableFuture with default executor
 	public static List<PriceRecord> findPricesCF() {
 		List<CompletableFuture<PriceRecord>> futures = shops.stream()
-				.map(s->CompletableFuture.supplyAsync(s::getPrice))
-				.map(f->f.thenCompose(p->CompletableFuture.supplyAsync(()->
+				.map(s -> CompletableFuture.supplyAsync(s::getPrice))
+				.map(f -> f.thenCompose(p -> CompletableFuture.supplyAsync(() ->
 						Discount.applyDiscount(p))))
 				.collect(Collectors.toList());
 		return futures.stream().map(CompletableFuture::join).collect(Collectors.toList());
@@ -75,8 +75,8 @@ public class CompletableFutureApplication {
 	public static List<PriceRecord> findPricesCustomExecutor() {
 
 		List<CompletableFuture<PriceRecord>> futures = shops.stream()
-				.map(s->CompletableFuture.supplyAsync(s::getPrice,es))
-				.map(f->f.thenCompose(p->CompletableFuture.supplyAsync(()->Discount.applyDiscount(p),es)))
+				.map(s -> CompletableFuture.supplyAsync(s::getPrice, es))
+				.map(f -> f.thenCompose(p -> CompletableFuture.supplyAsync(() -> Discount.applyDiscount(p), es)))
 				.collect(Collectors.toList());
 		// it's important to create separate stream here
 		return futures.stream()
@@ -87,12 +87,12 @@ public class CompletableFutureApplication {
 	// Fifth - CompletableFuture with listener
 	public static void findPricesCustomExecutorWithListener() {
 		List<CompletableFuture<PriceRecord>> futures = shops.stream()
-				.map(s->CompletableFuture.supplyAsync(s::getPrice,es))
-				.map(f->f.thenCompose(p->CompletableFuture.supplyAsync(()->Discount.applyDiscount(p),es)))
+				.map(s -> CompletableFuture.supplyAsync(s::getPrice, es))
+				.map(f -> f.thenCompose(p -> CompletableFuture.supplyAsync(() -> Discount.applyDiscount(p), es)))
 				.collect(Collectors.toList());
 
 		CompletableFuture[] all = futures.stream()
-				.map(f->f.thenAccept(System.out::println))
+				.map(f -> f.thenAccept(System.out::println))
 				.toArray(CompletableFuture[]::new);
 		CompletableFuture.allOf(all).join();
 	}
