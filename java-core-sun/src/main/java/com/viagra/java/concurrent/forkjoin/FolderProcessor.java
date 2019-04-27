@@ -11,7 +11,7 @@ import java.util.concurrent.RecursiveTask;
  * @Date: Created in 14:10 2019/4/22
  * @Modified By:
  */
-public class FolderProcessor extends RecursiveTask<List<String>>{
+public class FolderProcessor extends RecursiveTask<List<String>> {
 	private static final long serialVersionUID = 1L;
 	// This attribute will store the full path of the folder this task is going to process.
 	private final String path;
@@ -19,8 +19,7 @@ public class FolderProcessor extends RecursiveTask<List<String>>{
 	private final String extension;
 
 	//Implement the constructor of the class to initialize its attributes
-	public FolderProcessor(String path, String extension)
-	{
+	public FolderProcessor(String path, String extension) {
 		this.path = path;
 		this.extension = extension;
 	}
@@ -28,6 +27,7 @@ public class FolderProcessor extends RecursiveTask<List<String>>{
 	/**
 	 * Implement the compute() method. As you parameterized the RecursiveTask class with the List<String> type,
 	 * this method has to return an object of that type.
+	 *
 	 * @return
 	 */
 	@Override
@@ -42,10 +42,10 @@ public class FolderProcessor extends RecursiveTask<List<String>>{
 		File content[] = file.listFiles();
 		// For each element in the folder, if there is a subfolder, create a new FolderProcessor object
 		// and execute it asynchronously using the fork() method.
-		if(content!=null){
-			for(int i=0;i<content.length;i++){
-				if(content[i].isDirectory()){
-					FolderProcessor task = new FolderProcessor(content[i].getAbsolutePath(),extension);
+		if (content != null) {
+			for (int i = 0; i < content.length; i++) {
+				if (content[i].isDirectory()) {
+					FolderProcessor task = new FolderProcessor(content[i].getAbsolutePath(), extension);
 					task.fork();
 					tasks.add(task);
 				}
@@ -53,8 +53,8 @@ public class FolderProcessor extends RecursiveTask<List<String>>{
 				 * Otherwise, compare the extension of the file with the extension you are looking for using the checkFile() method.
 				 * and, if they are equal, store the full path of the file in the list of strings declared earlier.
 				 */
-				else{
-					if (checkFile(content[i].getName())){
+				else {
+					if (checkFile(content[i].getName())) {
 						list.add(content[i].getAbsolutePath());
 					}
 				}
@@ -65,27 +65,28 @@ public class FolderProcessor extends RecursiveTask<List<String>>{
 		 * If the list of the FolderProcessor subtasks has more than 50 elements,
 		 * write a message to the console to indicate this circumstance.
 		 */
-		if (tasks.size() > 50){
+		if (tasks.size() > 50) {
 			System.out.printf("%s: %d tasks ran.\n", file.getAbsolutePath(), tasks.size());
 		}
 
 		// add to the list of files the results returned by the subtasks launched by this task.
-		addResultsFromTasks(list,tasks);
+		addResultsFromTasks(list, tasks);
 		// Return the list of strings
 		return list;
 	}
+
 	//For each task stored in the list of tasks, call the join() method that will wait for its finalization
 	// and then will return the result of the task.
 	//Add that result to the list of strings using the addAll() method.
-	private void addResultsFromTasks(List<String> list, List<FolderProcessor> tasks){
-		for (FolderProcessor item : tasks){
+	private void addResultsFromTasks(List<String> list, List<FolderProcessor> tasks) {
+		for (FolderProcessor item : tasks) {
 			list.addAll(item.join());
 		}
 	}
 
 
 	// This method compares if the name of a file passed as a parameter ends with the extension you are looking for.
-	private boolean checkFile(String name){
+	private boolean checkFile(String name) {
 		return name.endsWith(extension);
 	}
 

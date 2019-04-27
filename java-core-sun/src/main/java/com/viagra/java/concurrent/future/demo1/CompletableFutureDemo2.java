@@ -42,8 +42,6 @@ public class CompletableFutureDemo2 {
 		System.out.println("list=" + list + ",耗时=" + (System.currentTimeMillis() - start));
 
 
-
-
 	}
 
 	public int calc(Integer i) {
