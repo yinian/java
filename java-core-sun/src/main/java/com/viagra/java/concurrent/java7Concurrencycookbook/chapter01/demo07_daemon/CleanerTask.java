@@ -55,4 +55,11 @@ public class CleanerTask extends Thread{
 			System.out.printf("Cleaner: Size of the queue: %d\n", deque.size());
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "CleanerTask{" +
+				"deque=" + deque +
+				'}';
+	}
 }
