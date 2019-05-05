@@ -12,6 +12,8 @@
     * demo08_daemon: 开发有两个线程,创建一个后台线程的示例.一个用户线程用来将事件写入队列,后台线程清理这个队列,移除那些生成超过10秒的事件
     * demo09_daemon: 使用局部线程变量
     * demo10_daemon: list()方法的输出和我们输出的每个线程对象的状态                                        
+    * demo11_threadgroupexception: 处理线程组中的不受控制的异常                                       
+    * demo12_threadfactory: 通过工厂创建线程                                       
 
     
     
