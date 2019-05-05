@@ -7,6 +7,9 @@
     * demo03_interrupt: 创建了线程,然后5秒后,使用中断机制强行终止.
     * demo04_controlinterruption:程观察一个指定名称的目录和它所有的子目录来展示如何使用InterruptedException异常来控制线程的中断.
     * demo05_sleep: sleep()方法来输出每秒时间的程序
+    * demo06_join: join()方法来输出每秒时间的程序序
+    * demo07_daemon: daemon()方法来创建和运行后台线程
+                                        
 
     
     
