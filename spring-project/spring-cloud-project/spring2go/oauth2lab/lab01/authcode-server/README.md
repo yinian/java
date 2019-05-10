@@ -26,7 +26,10 @@ curl -X POST --user clientapp:112233 http://localhost:8080/oauth/token -H
 "code=8uYpdo&grant_type=authorization_code&redirect_uri=http%3A%2F%2Flocalh
 ost%3A9001%2Fcallback&scope=read_userinfo"
 
+<img src="images/2.gif" alt="drawing" style="width: 480;"/>
+
 案例响应：
+<img src="images/3.gif" alt="drawing" style="width: 480;"/>
 
 ```json
 {
