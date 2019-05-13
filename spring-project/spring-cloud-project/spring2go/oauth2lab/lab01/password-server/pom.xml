@@ -4,7 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.viagra</groupId>
     <artifactId>password-server</artifactId>
+    <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
+
     <name>password-server</name>
     <description>Demo project for Spring Boot</description>
 
