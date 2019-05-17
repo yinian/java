@@ -1,4 +1,12 @@
 ## 这个包下是有关《java7 Concurrency CookBook》的代码
+
+具体代码模板：<https://github.com/ykgarfield/Java-7-Concurrency-Cookbook.git>
+
+中文版翻译页面：
+
+http://ifeve.com/java-7-concurrency-cookbook/
+
+
 ### chapter01
 具体例子可以参考：第1章 线程管理
 
