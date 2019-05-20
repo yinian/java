@@ -1,4 +1,4 @@
-跨站点请求伪造(CSRF)安全实验
+跨站点请求伪造(CSRF)安全实验 -- 也不重要，涉及安全的，可以不看
 ======
 
 # 操作方式
@@ -14,7 +14,7 @@
 ### 4. 使用Firefox浏览器获取授权码
 
 使用黑客账号`attacker/xyz`进行登录认证，注意请求不带**state**
-
+ 
 ```
 http://localhost:8080/oauth/authorize?client_id=clientapp&redirect_uri=http
 ://localhost:9000/resource&response_type=code&scope=read+write
