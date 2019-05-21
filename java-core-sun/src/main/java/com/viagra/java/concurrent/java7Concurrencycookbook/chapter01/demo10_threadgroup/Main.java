@@ -29,7 +29,7 @@ public class Main {
 		}
 
 		System.out.printf("Number of Threads: %d\n", threadGroup.activeCount());
-		System.out.printf("Information about the Thread Group\n");
+		System.out.printf("Information about the Thread Grouper\n");
 		// list()：打印线程的信息,用来debug的
 		threadGroup.list();
 
@@ -68,7 +68,7 @@ public class Main {
 	Thread Thread-4: Start
 	Thread Thread-4: 20
 	Number of Threads: 4
-	Information about the Thread Group
+	Information about the Thread Grouper
 	java.lang.ThreadGroup[name=Searcher,maxpri=10]
 	Thread[Thread-0,5,Searcher]
 	Thread[Thread-1,5,Searcher]
