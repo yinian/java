@@ -1,4 +1,4 @@
-package com.viagra;
+package com.viagra.webFlux;
 
 import org.junit.Test;
 import org.reactivestreams.Subscriber;
