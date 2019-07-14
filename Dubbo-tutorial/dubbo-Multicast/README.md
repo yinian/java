@@ -7,5 +7,9 @@
 ## 描述
 
 这个例子主要是基于Dubbo-demo来进行的，也就是工程名dubbo-Multicast(dubbo-demo)来进行的。
+1.启动Provider.java
+2.启动Consumer.java
+
+## 有关组播的概念
 
 
