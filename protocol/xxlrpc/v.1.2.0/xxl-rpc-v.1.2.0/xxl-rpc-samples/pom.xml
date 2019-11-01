@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>xxl-rpc</artifactId>
+        <groupId>com.yinian</groupId>
+        <version>1.2.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.yinian</groupId>
+    <artifactId>xxl-rpc-samples</artifactId>
+    <packaging>pom</packaging>
+    <version>1.2.0</version>
+    <modules>
+        <module>xxl-rpc-sample-api</module>
+        <module>xxl-rpc-sample-server</module>
+        <module>xxl-rpc-sample-client2</module>
+    </modules>
+    <!-- TODO project name  -->
+    <name>quickstart</name>
+    <description>例子</description>
+
+</project>
