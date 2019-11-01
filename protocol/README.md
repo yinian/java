@@ -1,3 +1,6 @@
-## �����Ҫ���й�����Э���
+## 这个主要是有关网络协议的
 
-����httpЭ���websocketЭ�飬websocketЭ��̫�����ˣ����þͺ���
+比如http协议和websocket协议，websocket协议太复杂了，会用就好了
+
+## xxl-rpc
+是有关分布式协议的
