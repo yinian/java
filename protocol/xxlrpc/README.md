@@ -34,6 +34,8 @@
  https://github.com/xuxueli/xxl-rpc 
 
  https://gitee.com/wodeii/xxl-rpc 
+ 
+ 有关v1.3.x-v1.4.x 没有提交上来，所以参考具体的项目地址就行。
 
 
 
